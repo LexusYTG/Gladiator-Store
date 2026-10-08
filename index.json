@@ -1,15 +1,19 @@
 {
-  "schema": 1,
-  "updated": "2026-10-08T10:57:41Z",
+  "schema": 2,
+  "updated": "2026-10-08T11:22:24Z",
   "stubs": {
     "scutum": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/scutum/",
     "spatha": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/spatha/",
-    "lorica": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/lorica/"
+    "lorica": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/lorica/",
+    "init-setup": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/init-setup/",
+    "session": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/session/",
+    "sesar": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/sesar/"
   },
   "components": [
     {
       "id": "scutumd",
       "component": "scutum",
+      "category": "bionic",
       "version": "1.3.1",
       "file": "scutumd-1.3.1",
       "sha256": "0a75583b6998426ed53b77ff258adb07f2a591ebb0f032fda9b6e480d4eb5eee",
@@ -20,12 +24,12 @@
           "mode": "0711"
         }
       ],
-      "desc": "Bionic daemon. GLES/EGL bridge to the Mali driver.",
-      "category": "bionic"
+      "desc": "Bionic daemon. GLES/EGL bridge to the Mali driver."
     },
     {
       "id": "libEGL.so",
       "component": "scutum",
+      "category": "glibc",
       "version": "1.3.1",
       "file": "libEGL-1.3.1.so",
       "sha256": "e42256c39aef91f91d2d556ba792df6cd977b186dcec2253d06893db12c78f77",
@@ -40,12 +44,12 @@
           "mode": "0755"
         }
       ],
-      "desc": "GLES/EGL shim (glibc). Talks to scutumd over shared memory.",
-      "category": "glibc"
+      "desc": "GLES/EGL shim (glibc). Talks to scutumd over shared memory."
     },
     {
       "id": "scutum-guard.sh",
       "component": "scutum",
+      "category": "shell",
       "version": "1.3.1",
       "file": "scutum-guard-1.3.1.sh",
       "sha256": "bb215a95334388f6b493a46953e96c9ea076c99559e9c05640ae01ff1888ee94",
@@ -56,12 +60,12 @@
           "mode": "0711"
         }
       ],
-      "desc": "Installer. Copies shims, disables Mesa ICDs, writes profile.d.",
-      "category": "glibc"
+      "desc": "Installer. Copies shims, disables Mesa ICDs, writes profile.d."
     },
     {
       "id": "spathad",
       "component": "spatha",
+      "category": "bionic",
       "version": "1.2",
       "file": "spathad-1.2",
       "sha256": "23c2e6be4275f382e844db591921bf236e73d0df4d42affdd56d09100e5af676",
@@ -72,12 +76,12 @@
           "mode": "0711"
         }
       ],
-      "desc": "Bionic daemon. Vulkan bridge to the Mali driver.",
-      "category": "bionic"
+      "desc": "Bionic daemon. Vulkan bridge to the Mali driver."
     },
     {
       "id": "libspatha-icd.so",
       "component": "spatha",
+      "category": "icd",
       "version": "1.2",
       "file": "libspatha-icd-1.2.so",
       "sha256": "a3e74c345b12ca004a089ad156fe5950573a4f59d59b09f2c1937c173cfd4c01",
@@ -88,12 +92,12 @@
           "mode": "0755"
         }
       ],
-      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad.",
-      "category": "icd"
+      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad."
     },
     {
       "id": "spatha_icd.json",
       "component": "spatha",
+      "category": "json",
       "version": "1.2",
       "file": "spatha_icd-1.2.json",
       "sha256": "2cfa91fd6f3c8606b7bedf784277ada610136580b9ea90d7b9a3f8d4eaa998f8",
@@ -104,12 +108,12 @@
           "mode": "0644"
         }
       ],
-      "desc": "Vulkan ICD registration.",
-      "category": "json"
+      "desc": "Vulkan ICD registration."
     },
     {
       "id": "spatha-guard.sh",
       "component": "spatha",
+      "category": "shell",
       "version": "1.2",
       "file": "spatha-guard-1.2.sh",
       "sha256": "e75ec6442c8b31a1ed26ef55067e2417157e98431d6d544ed082a0155c3b45be",
@@ -120,12 +124,12 @@
           "mode": "0711"
         }
       ],
-      "desc": "Installer for Spatha files.",
-      "category": "glibc"
+      "desc": "Installer for Spatha files."
     },
     {
       "id": "libGL.so.1",
       "component": "lorica",
+      "category": "glibc",
       "version": "1.3",
       "file": "libGL-1.3.so.1",
       "sha256": "b2f58a164e9f80b1d36e7009f0b02b8e749da8adde8a366077c946da0abde4d1",
@@ -140,8 +144,103 @@
           "mode": "0755"
         }
       ],
-      "desc": "Lorica. Desktop GL 1.x-4.3 to GLES translator.",
-      "category": "glibc"
+      "desc": "Lorica. Desktop GL 1.x-4.3 to GLES translator."
+    },
+    {
+      "id": "ubuntu-init.sh",
+      "component": "init-setup",
+      "category": "shell",
+      "version": "1.3",
+      "file": "ubuntu-init.sh",
+      "sha256": "23bc2fd4680b7ffd5b52b41aebb30ffd54b4bb60e030ab29654d07df485e11bd",
+      "size": 3467,
+      "dests": [
+        {
+          "path": "bin/ubuntu-init.sh",
+          "mode": "0755"
+        }
+      ],
+      "desc": "First-run Ubuntu container setup."
+    },
+    {
+      "id": "session-bootstrap.sh",
+      "component": "session",
+      "category": "shell",
+      "version": "1.3",
+      "file": "session-bootstrap.sh",
+      "sha256": "fcfb2785ce6f38b630ff552663a6d63feab53cfcb02e7b9b987005304353ea28",
+      "size": 5192,
+      "dests": [
+        {
+          "path": "bin/session-bootstrap.sh",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Main session launcher."
+    },
+    {
+      "id": "session-start.sh",
+      "component": "session",
+      "category": "shell",
+      "version": "1.3",
+      "file": "session-start.sh",
+      "sha256": "9a8f213997381845f08184245015965b7ddce4d7dd7391209bfcc7cf78a7d4b1",
+      "size": 4171,
+      "dests": [
+        {
+          "path": "bin/session-start.sh",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Session start hook."
+    },
+    {
+      "id": "extract-ubuntu.sh",
+      "component": "session",
+      "category": "shell",
+      "version": "1.3",
+      "file": "extract-ubuntu.sh",
+      "sha256": "238d950c4b6ffcad73c11d0e36f0725790250fec3cddd29d4105af1fda643aae",
+      "size": 1523,
+      "dests": [
+        {
+          "path": "bin/extract-ubuntu.sh",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Ubuntu rootfs extraction."
+    },
+    {
+      "id": "extract-mali.sh",
+      "component": "session",
+      "category": "shell",
+      "version": "1.3",
+      "file": "extract-mali.sh",
+      "sha256": "3e2ee3b9b8752656c1d19b31e5f3ce36620ef176c13c23a07522bf1c07f16db9",
+      "size": 1879,
+      "dests": [
+        {
+          "path": "bin/extract-mali.sh",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Mali driver extraction."
+    },
+    {
+      "id": "sesar-shell",
+      "component": "sesar",
+      "category": "glibc",
+      "version": "1.3",
+      "file": "sesar-shell",
+      "sha256": "bc26d22788a303c9120c59008d6103be44efcdedf70b2232a6418a9d51199a35",
+      "size": 218712,
+      "dests": [
+        {
+          "path": "share/sesar/sesar-shell",
+          "mode": "0711"
+        }
+      ],
+      "desc": "Desktop shell."
     }
   ]
 }
