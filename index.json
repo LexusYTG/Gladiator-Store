@@ -242,5 +242,37 @@
       ],
       "desc": "Desktop shell."
     }
+  ],
+  "controls": [
+    {
+      "id": "re-espanol",
+      "name": "Red Eclipse (espa\u00f1ol)",
+      "author": "LexusYTG",
+      "category": "fps",
+      "desc": "Perfil para FPS con stick izquierdo + disparo.",
+      "file": "fps/re-espanol.json",
+      "sha256": "4655dbf23735878893ac7b2832984b2779fcd61b6c39cf768bb880e8e5f5c420",
+      "count": 4
+    },
+    {
+      "id": "stk-minimal",
+      "name": "STK minimal",
+      "author": "LexusYTG",
+      "category": "racing",
+      "desc": "Acelerador + freno + direcci\u00f3n. Lo m\u00ednimo para correr.",
+      "file": "racing/stk-minimal.json",
+      "sha256": "8ce62c80929a3161ba6f71238aac4db68d72687d2054b4974c4afb43c5da2257",
+      "count": 3
+    },
+    {
+      "id": "minimal",
+      "name": "Gen\u00e9rico minimal",
+      "author": "LexusYTG",
+      "category": "generic",
+      "desc": "A, B y stick. Base para cualquier juego.",
+      "file": "generic/minimal.json",
+      "sha256": "e7d2adcfe4f785def8e9713657f79bdcb416ade49fcdd9468da9ab07207247e3",
+      "count": 3
+    }
   ]
 }

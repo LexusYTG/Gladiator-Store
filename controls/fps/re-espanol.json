@@ -1,0 +1,6 @@
+[
+  {"id":"fps-fire","label":"","type":3,"shape":0,"keyCode":0,"cx":0.85,"cy":0.42,"size":0.22,"sens":1.5},
+  {"id":"fps-a","label":"A","type":0,"shape":1,"keyCode":29,"cx":0.85,"cy":0.72,"size":0.14},
+  {"id":"fps-b","label":"B","type":0,"shape":1,"keyCode":30,"cx":0.68,"cy":0.82,"size":0.13},
+  {"id":"fps-stick","label":"STICK","type":1,"shape":0,"keyUp":51,"keyDown":47,"keyLeft":29,"keyRight":32,"cx":0.15,"cy":0.72,"size":0.30}
+]

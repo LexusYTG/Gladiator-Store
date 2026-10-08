@@ -1,0 +1,5 @@
+[
+  {"id":"gen-a","label":"A","type":0,"shape":1,"keyCode":29,"cx":0.88,"cy":0.78,"size":0.14},
+  {"id":"gen-b","label":"B","type":0,"shape":1,"keyCode":30,"cx":0.72,"cy":0.85,"size":0.14},
+  {"id":"gen-stick","label":"STICK","type":1,"shape":0,"keyUp":51,"keyDown":47,"keyLeft":29,"keyRight":32,"cx":0.15,"cy":0.75,"size":0.28}
+]

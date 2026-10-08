@@ -1,0 +1,5 @@
+[
+  {"id":"stk-accel","label":"A","type":0,"shape":1,"keyCode":51,"cx":0.88,"cy":0.75,"size":0.16},
+  {"id":"stk-brake","label":"B","type":0,"shape":1,"keyCode":47,"cx":0.72,"cy":0.85,"size":0.14},
+  {"id":"stk-steer","label":"STICK","type":1,"shape":0,"keyUp":0,"keyDown":0,"keyLeft":29,"keyRight":32,"cx":0.15,"cy":0.78,"size":0.30}
+]
