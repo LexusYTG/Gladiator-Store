@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "updated": "2026-10-08T10:57:41Z",
+  "stubs": {
+    "scutum": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/scutum/",
+    "spatha": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/spatha/",
+    "lorica": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/lorica/"
+  },
+  "components": [
+    {
+      "id": "scutumd",
+      "component": "scutum",
+      "version": "1.3.1",
+      "file": "scutumd-1.3.1",
+      "sha256": "0a75583b6998426ed53b77ff258adb07f2a591ebb0f032fda9b6e480d4eb5eee",
+      "size": 157856,
+      "dests": [
+        {
+          "path": "bin/scutumd",
+          "mode": "0711"
+        }
+      ],
+      "desc": "Bionic daemon. GLES/EGL bridge to the Mali driver."
+    },
+    {
+      "id": "libEGL.so",
+      "component": "scutum",
+      "version": "1.3.1",
+      "file": "libEGL-1.3.1.so",
+      "sha256": "0dcb7f8bbe1fbeccba66d5f39acafbf8fa4004f71ce56658150820e462b0f0c2",
+      "size": 228048,
+      "dests": [
+        {
+          "path": "share/spatha/libEGL.so",
+          "mode": "0755"
+        },
+        {
+          "path": "share/lorica/libEGL.so",
+          "mode": "0755"
+        }
+      ],
+      "desc": "GLES/EGL shim (glibc). Talks to scutumd over shared memory."
+    },
+    {
+      "id": "scutum-guard.sh",
+      "component": "scutum",
+      "version": "1.3.1",
+      "file": "scutum-guard-1.3.1.sh",
+      "sha256": "bb215a95334388f6b493a46953e96c9ea076c99559e9c05640ae01ff1888ee94",
+      "size": 1930,
+      "dests": [
+        {
+          "path": "share/spatha/scutum-guard.sh",
+          "mode": "0711"
+        }
+      ],
+      "desc": "Installer. Copies shims, disables Mesa ICDs, writes profile.d."
+    },
+    {
+      "id": "spathad",
+      "component": "spatha",
+      "version": "1.2",
+      "file": "spathad-1.2",
+      "sha256": "23c2e6be4275f382e844db591921bf236e73d0df4d42affdd56d09100e5af676",
+      "size": 103808,
+      "dests": [
+        {
+          "path": "bin/spathad",
+          "mode": "0711"
+        }
+      ],
+      "desc": "Bionic daemon. Vulkan bridge to the Mali driver."
+    },
+    {
+      "id": "libspatha-icd.so",
+      "component": "spatha",
+      "version": "1.2",
+      "file": "libspatha-icd-1.2.so",
+      "sha256": "a3e74c345b12ca004a089ad156fe5950573a4f59d59b09f2c1937c173cfd4c01",
+      "size": 219016,
+      "dests": [
+        {
+          "path": "share/spatha/libspatha-icd.so",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad."
+    },
+    {
+      "id": "spatha_icd.json",
+      "component": "spatha",
+      "version": "1.2",
+      "file": "spatha_icd-1.2.json",
+      "sha256": "2cfa91fd6f3c8606b7bedf784277ada610136580b9ea90d7b9a3f8d4eaa998f8",
+      "size": 160,
+      "dests": [
+        {
+          "path": "share/spatha/spatha_icd.json",
+          "mode": "0644"
+        }
+      ],
+      "desc": "Vulkan ICD registration."
+    },
+    {
+      "id": "spatha-guard.sh",
+      "component": "spatha",
+      "version": "1.2",
+      "file": "spatha-guard-1.2.sh",
+      "sha256": "e75ec6442c8b31a1ed26ef55067e2417157e98431d6d544ed082a0155c3b45be",
+      "size": 2825,
+      "dests": [
+        {
+          "path": "share/spatha/spatha-guard.sh",
+          "mode": "0711"
+        }
+      ],
+      "desc": "Installer for Spatha files."
+    },
+    {
+      "id": "libGL.so.1",
+      "component": "lorica",
+      "version": "1.3",
+      "file": "libGL-1.3.so.1",
+      "sha256": "f8fb37fc6b3b1491576804c85870959c65527624c4f39d0c277c67d97249bbb7",
+      "size": 2501144,
+      "dests": [
+        {
+          "path": "share/spatha/libGL.so.1",
+          "mode": "0755"
+        },
+        {
+          "path": "share/lorica/libGL.so.1",
+          "mode": "0755"
+        }
+      ],
+      "desc": "Lorica. Desktop GL 1.x-4.3 to GLES translator."
+    }
+  ]
+}
