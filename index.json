@@ -20,7 +20,8 @@
           "mode": "0711"
         }
       ],
-      "desc": "Bionic daemon. GLES/EGL bridge to the Mali driver."
+      "desc": "Bionic daemon. GLES/EGL bridge to the Mali driver.",
+      "category": "bionic"
     },
     {
       "id": "libEGL.so",
@@ -39,7 +40,8 @@
           "mode": "0755"
         }
       ],
-      "desc": "GLES/EGL shim (glibc). Talks to scutumd over shared memory."
+      "desc": "GLES/EGL shim (glibc). Talks to scutumd over shared memory.",
+      "category": "glibc"
     },
     {
       "id": "scutum-guard.sh",
@@ -54,7 +56,8 @@
           "mode": "0711"
         }
       ],
-      "desc": "Installer. Copies shims, disables Mesa ICDs, writes profile.d."
+      "desc": "Installer. Copies shims, disables Mesa ICDs, writes profile.d.",
+      "category": "glibc"
     },
     {
       "id": "spathad",
@@ -69,7 +72,8 @@
           "mode": "0711"
         }
       ],
-      "desc": "Bionic daemon. Vulkan bridge to the Mali driver."
+      "desc": "Bionic daemon. Vulkan bridge to the Mali driver.",
+      "category": "bionic"
     },
     {
       "id": "libspatha-icd.so",
@@ -84,7 +88,8 @@
           "mode": "0755"
         }
       ],
-      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad."
+      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad.",
+      "category": "icd"
     },
     {
       "id": "spatha_icd.json",
@@ -99,7 +104,8 @@
           "mode": "0644"
         }
       ],
-      "desc": "Vulkan ICD registration."
+      "desc": "Vulkan ICD registration.",
+      "category": "json"
     },
     {
       "id": "spatha-guard.sh",
@@ -114,7 +120,8 @@
           "mode": "0711"
         }
       ],
-      "desc": "Installer for Spatha files."
+      "desc": "Installer for Spatha files.",
+      "category": "glibc"
     },
     {
       "id": "libGL.so.1",
@@ -133,7 +140,8 @@
           "mode": "0755"
         }
       ],
-      "desc": "Lorica. Desktop GL 1.x-4.3 to GLES translator."
+      "desc": "Lorica. Desktop GL 1.x-4.3 to GLES translator.",
+      "category": "glibc"
     }
   ]
 }
