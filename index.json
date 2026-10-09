@@ -32,8 +32,8 @@
       "category": "glibc",
       "version": "1.3.2",
       "file": "libEGL-1.3.2.so",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "size": 0,
+      "sha256": "51d665d0758e898a46b6d50085bd672f2abd4d9069f0642b89db7a2e14cd2dca",
+      "size": 228424,
       "dests": [
         {
           "path": "share/spatha/libEGL.so",
