@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-10-08T11:22:24Z",
+  "updated": "2026-10-10",
   "stubs": {
     "scutum": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/scutum/",
     "spatha": "https://raw.githubusercontent.com/LexusYTG/Gladiator-Store/main/spatha/",
@@ -66,42 +66,42 @@
       "id": "spathad",
       "component": "spatha",
       "category": "bionic",
-      "version": "1.2",
-      "file": "spathad-1.2",
-      "sha256": "23c2e6be4275f382e844db591921bf236e73d0df4d42affdd56d09100e5af676",
-      "size": 103808,
+      "version": "1.3",
+      "file": "spathad-1.3",
+      "sha256": "b09e7b8bef88e791b077d4c4f6afc4d55b3fcfd5ebbe7bce9135039931a19c2a",
+      "size": 165232,
       "dests": [
         {
           "path": "bin/spathad",
           "mode": "0711"
         }
       ],
-      "desc": "Bionic daemon. Vulkan bridge to the Mali driver."
+      "desc": "Bionic daemon. Vulkan 1.3 bridge to the Mali driver. DirectX VK ready."
     },
     {
       "id": "libspatha-icd.so",
       "component": "spatha",
       "category": "icd",
-      "version": "1.2",
-      "file": "libspatha-icd-1.2.so",
-      "sha256": "a3e74c345b12ca004a089ad156fe5950573a4f59d59b09f2c1937c173cfd4c01",
-      "size": 219016,
+      "version": "1.3",
+      "file": "libspatha-icd-1.3.so",
+      "sha256": "43d7c981652e94161d8de47f27d5a9edcd4818162f708c9a2c0d63817f5b21e9",
+      "size": 222744,
       "dests": [
         {
           "path": "share/spatha/libspatha-icd.so",
           "mode": "0755"
         }
       ],
-      "desc": "Vulkan ICD stub (glibc). Forwards calls to spathad."
+      "desc": "Vulkan 1.3 ICD stub (glibc). Forwards calls to spathad. DirectX VK ready."
     },
     {
       "id": "spatha_icd.json",
       "component": "spatha",
       "category": "json",
-      "version": "1.2",
-      "file": "spatha_icd-1.2.json",
-      "sha256": "2cfa91fd6f3c8606b7bedf784277ada610136580b9ea90d7b9a3f8d4eaa998f8",
-      "size": 160,
+      "version": "1.3",
+      "file": "spatha_icd-1.3.json",
+      "sha256": "a7488208cc31a857567d56502a9191293fdd271c3be14b4cb36e32dc10d290a8",
+      "size": 161,
       "dests": [
         {
           "path": "share/spatha/spatha_icd.json",
@@ -246,7 +246,7 @@
   "controls": [
     {
       "id": "re-espanol",
-      "name": "Red Eclipse (espa\u00f1ol)",
+      "name": "Red Eclipse (español)",
       "author": "LexusYTG",
       "category": "fps",
       "desc": "Perfil para FPS con stick izquierdo + disparo.",
@@ -259,14 +259,14 @@
       "name": "STK minimal",
       "author": "LexusYTG",
       "category": "racing",
-      "desc": "Acelerador + freno + direcci\u00f3n. Lo m\u00ednimo para correr.",
+      "desc": "Acelerador + freno + dirección. Lo mínimo para correr.",
       "file": "racing/stk-minimal.json",
       "sha256": "8ce62c80929a3161ba6f71238aac4db68d72687d2054b4974c4afb43c5da2257",
       "count": 3
     },
     {
       "id": "minimal",
-      "name": "Gen\u00e9rico minimal",
+      "name": "Genérico minimal",
       "author": "LexusYTG",
       "category": "generic",
       "desc": "A, B y stick. Base para cualquier juego.",
